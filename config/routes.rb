@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get 'signup', to: 'users#new', as: "signup"
   resources :users
   resources :sessions
+  root 'posts#index'
 end

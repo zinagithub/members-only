@@ -10,6 +10,7 @@
   </head>
 
   <body>
+    <%= link_to 'Posts', posts_path %>
     <% if logged_in? %>
       <%= link_to 'logout', logout_path %>
     <% else %>

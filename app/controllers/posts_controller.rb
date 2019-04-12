@@ -1,7 +1,6 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
   before_action :authorize, except: [:show, :index]
-
   # GET /posts
   # GET /posts.json
   def index
@@ -72,7 +71,5 @@ class PostsController < ApplicationController
     def post_params
       params.require(:post).permit(:title, :body, :user_id)
     end
-    def authorize
-      redirect_to login_url unless logged_in?
-    end  
+
 end
