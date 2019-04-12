@@ -30,4 +30,8 @@ module SessionsHelper
 	    @current_user = nil
 	end
 
+	def authorize
+      redirect_to login_url unless logged_in?
+    end
+
 end
