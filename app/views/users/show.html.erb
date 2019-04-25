@@ -1,0 +1,16 @@
+<% if logged_in? %>
+	<h1>show User</h1>
+	<div>
+		<%= @user.name %>
+
+	</div>
+	<div>
+		<%= @user.email %>
+
+	</div>
+
+<% else %>
+
+	<h1> please log in </h1>
+
+<% end %>

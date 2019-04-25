@@ -1,24 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Project : Members Only!
 
-Things you may want to cover:
+In this project, we are building an exclusive clubhouse where the members can write embarrassing posts about non-members. Inside the clubhouse, members can see who the author of a post is but, outside, they can only see the story and wonder who wrote it.
 
-* Ruby version
+link : https://www.theodinproject.com/courses/ruby-on-rails/lessons/authentication?ref=lnav#project-2-members-only
 
-* System dependencies
+Getting started:
 
-* Configuration
+To get started with the app, clone the repo and then install the needed gems:
 
-* Database creation
+$ bundle install --without production
 
-* Database initialization
+Next, migrate the database:
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+$ rails db:migrate
